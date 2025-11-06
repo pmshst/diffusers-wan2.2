@@ -46,6 +46,7 @@ source ~/.local/bin/env && \
 uv venv -p 3.12 && \
 source .venv/bin/activate && \
 git clone -b ${BRANCH_NAME} https://github.com/pmshst/diffusers-wan2.2.git || true && \
+mv diffusers-wan2.2 diffusers && \
 cd diffusers && \
 uv pip install -e . && \
 uv pip install transformers accelerate && \
