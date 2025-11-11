@@ -23,7 +23,8 @@ gcloud compute tpus tpu-vm create ${TPU_NAME}  \
   --zone=${ZONE} \
   --project=${PROJECT_ID} \
   --accelerator-type=${ACCELERATOR_TYPE}  \
-  --version=${RUNTIME_VERSION} 
+  --version=${RUNTIME_VERSION} \
+  --spot
 ```
 
 3. Prepare the python env on each tpu vms
