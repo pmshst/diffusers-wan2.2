@@ -26,6 +26,18 @@ gcloud compute tpus tpu-vm create ${TPU_NAME}  \
   --version=${RUNTIME_VERSION} \
   --spot
 ```
+or use specified vpc
+```
+gcloud compute tpus tpu-vm create ${TPU_NAME} \
+  --zone=${ZONE} \
+  --project=${PROJECT_ID} \
+  --accelerator-type=${ACCELERATOR_TYPE} \
+  --version=${RUNTIME_VERSION} \
+  --spot \
+  --network=wan22-tpu-vpc \
+  --subnetwork=wan22-tpu-vpc
+
+```
 
 3. Prepare the python env on each tpu vms
 ```
