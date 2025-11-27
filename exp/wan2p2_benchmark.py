@@ -99,7 +99,6 @@ TRANSFORMER_SHARDINGS = {
 'condition_embedder.time_embedder.linear_1.bias': ('tp',), # (torch.Size([5120]), torch.float32)
 'condition_embedder.time_embedder.linear_2.weight': (None, 'tp',), # (torch.Size([5120, 5120]), torch.float32)
 # 'condition_embedder.time_embedder.linear_2.bias': (), # (torch.Size([5120]), torch.float32)
-# 'condition_embedder.time_proj.weight': (), # (torch.Size([30720, 5120]), torch.bfloat16)
 # 'condition_embedder.time_proj.bias': (), # (torch.Size([30720]), torch.bfloat16)
 'condition_embedder.text_embedder.linear_1.weight': ('tp',), # (torch.Size([5120, 4096]), torch.bfloat16)
 'condition_embedder.text_embedder.linear_1.bias': ('tp',), # (torch.Size([5120]), torch.bfloat16)
